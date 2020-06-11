@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Navigation from "./elements/Navigation";
-import MovieInfo from "./elements/MovieInfo";
-import MovieInfoBar from "./elements/MovieInfoBar";
-import Grid from "./elements/Grid";
-import {useFetchMovie} from "./hooks/useFetchMovie";
-import Spinner from "./elements/Spinner";
-import Actor from "./elements/Actor";
+import Navigation from "../shared/elements/Navigation";
+import MovieInfo from "../shared/elements/MovieInfo";
+import MovieInfoBar from "../shared/elements/MovieInfoBar";
+import Grid from "../shared/elements/Grid";
+import {useFetchMovie} from "../hooks/useFetchMovie";
+import Spinner from "../shared/elements/Spinner";
+import Actor from "../shared/elements/Actor";
 
 const Movie = ({movieId}) => {
     const [movie, loading, error] = useFetchMovie(movieId);

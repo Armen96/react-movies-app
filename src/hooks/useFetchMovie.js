@@ -1,5 +1,5 @@
 import {useState, useEffect, useCallback} from 'react';
-import * as config from "../../config";
+import * as config from "../config";
 
 export const useFetchMovie = (movieId) => {
     const [state, setState] = useState({});

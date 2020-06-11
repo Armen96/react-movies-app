@@ -1,5 +1,5 @@
 import { useState, useEffect} from 'react';
-import * as config from '../../config';
+import * as config from '../config';
 
 export const useHomeFetch = () => {
     const [state, setState] = useState({movies: []});

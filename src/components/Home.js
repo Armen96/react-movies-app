@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import HeroImage from "./elements/HeroImage";
-import SearchBar from "./elements/SearchBar";
-import Grid from "./elements/Grid";
-import MovieThumb from "./elements/MovieThumb";
-import LoadMoreBtn from "./elements/LoadMoreBtn";
-import Spinner from "./elements/Spinner";
-import {useHomeFetch} from './hooks/useHomeFetch';
+import HeroImage from "../shared/elements/HeroImage";
+import SearchBar from "../shared/elements/SearchBar";
+import Grid from "../shared/elements/Grid";
+import MovieThumb from "../shared/elements/MovieThumb";
+import LoadMoreBtn from "../shared/elements/LoadMoreBtn";
+import Spinner from "../shared/elements/Spinner";
+import {useHomeFetch} from '../hooks/useHomeFetch';
 import * as config from '../config';
-import NoImage from './images/no_image.jpg';
+import NoImage from '../assets/images/no_image.jpg';
 
 const Home = () => {
     const [
