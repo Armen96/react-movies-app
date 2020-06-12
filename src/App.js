@@ -8,9 +8,16 @@ import Movie from './components/Movie';
 import About from './components/About';
 
 import { GlobalStyle } from './assets/styles/GlobalStyle';
+import { Provider } from 'react-redux';
+import configureStore from "./store";
+// import PostListContainer from "./components/PostListContainer";
+
+const initialState = {};
+
+const store = configureStore(initialState);
 
 const App = () => (
-    <>
+    <Provider store={store}>
       <Header />
       <Router>
         <Home exac path="/" />
@@ -19,7 +26,7 @@ const App = () => (
         <NotFound default />
       </Router>
       <GlobalStyle />
-    </>
+    </Provider>
 );
 
 export default App;
