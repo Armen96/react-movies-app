@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {fetchPosts} from "../store/ducks/post/actions";
+import {fetchPosts} from "../store/modules/post/actions";
 import PostList from "./PostList";
 
 const PostListContainer = () => {

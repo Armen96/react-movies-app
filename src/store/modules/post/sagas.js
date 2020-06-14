@@ -1,4 +1,4 @@
-import { all, call, fork, put, takeEvery } from "redux-saga/effects";
+import { all, call, fork, put, takeLatest } from "redux-saga/effects";
 
 import apiCaller from "../../../utils/apiCaller";
 import { fetchPostsError, fetchPostsSuccess } from "./actions";
@@ -23,7 +23,7 @@ function* handleFetch(action) {
 }
 
 function* watchFetchRequest() {
-    yield takeEvery(PostActionTypes.FETCH_POSTS, handleFetch);
+    yield takeLatest(PostActionTypes.FETCH_POSTS, handleFetch);
 }
 
 export default function* postSaga() {

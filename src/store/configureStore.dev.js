@@ -1,6 +1,6 @@
 import { applyMiddleware, createStore } from "redux";
 
-import { rootReducer, rootSaga } from "./ducks/index";
+import { rootReducer, rootSaga } from "./modules";
 import sagaMiddleware from "./middlewares/sagas";
 
 export default function configureStore(initialState) {

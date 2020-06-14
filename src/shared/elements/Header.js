@@ -22,6 +22,10 @@ const Header = () => (
             <Link to="/about" style={{margin: "20px", color: 'white'}}>
                 <span>About</span>
             </Link>
+
+            <Link to="/posts" style={{margin: "20px", color: 'white'}}>
+                <span>Posts</span>
+            </Link>
         </div>
     </StyledHeader>
 );

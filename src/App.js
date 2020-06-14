@@ -10,7 +10,7 @@ import About from './components/About';
 import { GlobalStyle } from './assets/styles/GlobalStyle';
 import { Provider } from 'react-redux';
 import configureStore from "./store";
-// import PostListContainer from "./components/PostListContainer";
+import PostListContainer from "./components/PostListContainer";
 
 const initialState = {};
 
@@ -22,6 +22,7 @@ const App = () => (
       <Router>
         <Home exac path="/" />
         <About exac path="/about"/>
+        <PostListContainer exac path="/posts"/>
         <Movie exac path="/:movieId" />
         <NotFound default />
       </Router>
