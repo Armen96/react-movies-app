@@ -5,7 +5,7 @@ export const initialState = {
     loading: false
 };
 
-export const postReducer = (state = initialState, action) => {
+export const postsReducer = (state = initialState, action) => {
     switch (action.type) {
         case PostActionTypes.FETCH_POSTS: {
             return {
@@ -16,7 +16,7 @@ export const postReducer = (state = initialState, action) => {
 
         case PostActionTypes.FETCH_POSTS_SUCCESS: {
             return {
-                ...initialState,
+                ...state,
                 data: action.payload
             };
         }

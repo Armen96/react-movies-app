@@ -1,0 +1,5 @@
+export const UserActionTypes = {
+    LOAD_USERS: "[USER] LOAD_USERS",
+    LOAD_USERS_SUCCESS: "[USER] LOAD_USERS_SUCCESS",
+    LOAD_USERS_ERROR: "[USER] LOAD_USERS_ERROR"
+};

@@ -7,10 +7,10 @@ const PostListContainer = () => {
     const dispatch = useDispatch();
 
     const stateToProps = useSelector(
-        ({ post }) => ({
-            loading: post.loading,
-            errors: post.errors,
-            data: post.data
+        ({ posts }) => ({
+            loading: posts.loading,
+            errors: posts.errors,
+            data: posts.data
         })
     );
 

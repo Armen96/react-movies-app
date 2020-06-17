@@ -6,6 +6,7 @@ import Home from './components/Home';
 import NotFound from './components/NotFound';
 import Movie from './components/Movie';
 import About from './components/About';
+import Users from './components/Users';
 
 import { GlobalStyle } from './assets/styles/GlobalStyle';
 import { Provider } from 'react-redux';
@@ -23,6 +24,7 @@ const App = () => (
         <Home exac path="/" />
         <About exac path="/about"/>
         <PostListContainer exac path="/posts"/>
+        <Users exac path="/users"/>
         <Movie exac path="/:movieId" />
         <NotFound default />
       </Router>

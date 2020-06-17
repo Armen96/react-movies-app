@@ -15,7 +15,7 @@ function* handleFetch(action) {
         yield put(fetchPostsSuccess(res));
     } catch (err) {
         if (err instanceof Error) {
-            yield put(fetchPostsError(err.stack));
+            yield put(fetchPostsError(err));
         } else {
             yield put(fetchPostsError("An unknown error occurred."));
         }
